@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplikasi Informasi Harian</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Search Bar -->
+  <div class="search-bar">
+    <input type="text" placeholder="Search">
+    <div class="search-icon">&#128269;</div>
+  </div>
+
+  <!-- Menu Buttons dengan Gambar -->
+  <div class="menu">
+    <div class="menu-item" id="openFormButton">
+      <img src="images/pelaporan.png" alt="Pelaporan" class="menu-icon">
+      <span>Pelaporan</span>
+    </div>
+    <div class="menu-item" id="statusButton">
+      <img src="images/status_pelaporan.png" alt="Status Laporan" class="menu-icon">
+      <span>Status Laporan</span>
+    </div>
+    <div class="menu-item" id="informasiButton">
+      <img src="images/panduan.png" alt="Panduan" class="menu-icon">
+      <span>Informasi</span>
+    </div>
+    <div class="menu-item">
+      <img src="images/konseling.png" alt="Konseling" class="menu-icon">
+      <span>Konseling</span>
+    </div>
+    <div class="menu-item">
+      <img src="images/temu_group.png" alt="Group" class="menu-icon">
+      <span>Group</span>
+    </div>
+  </div>
+
+  <!-- Informasi Harian -->
+  <h2>Informasi Harian</h2>
+  <div class="informasi-harian">
+    <!-- Berita pertama -->
+    <div class="info-item">
+      <img src="images/gibran.jpg" alt="Gibran Rakabuming Raka" class="info-image">
+      <div class="text-content">
+        <h3>Gibran Soroti Marak Kekerasan di Sekolah, Dorong UU Perlindungan Guru</h3>
+        <p>Jakarta, IDN Times - Wakil Presiden, Gibran Rakabuming Raka, menyoroti kasus bullying dan kekerasan di lingkungan sekolah. Dia menekankan pentingnya sekolah jadi tempat yang nyaman dan aman. Di hadapan kepala dinas pendidikan seluruh Indonesia, Gibran meminta agar insiden kekerasan, bullying, dan kriminalisasi terhadap guru tidak lagi terjadi. "Sekolah itu harus menjadi tempat yang aman dan nyaman bagi guru dan para murid. Jangan ada lagi kasus kekerasan, kasus bullying, jangan ada lagi kasus kriminalisasi guru," ujar Gibran dalam Rapat Koordinasi Evaluasi Kebijakan Pendidikan Bersama Para Kepala Dinas Pendidikan, Senin (11/11/2024).</p>
+      </div>
+    </div>
+    <!-- Berita kedua -->
+    <div class="info-item">
+      <img src="images/raka.jpg" alt="Judul Berita Kedua" class="info-image">
+      <div class="text-content">
+        <h3>Jangan sampai UU perlindungan anak jadi senjat serang guru</h3>
+        <p>Gibran menyebutkan, meski sudah ada Undang-Undang Perlindungan Anak, jangan sampai itu menjadi senjata untuk menyerang guru. "Ini mungkin ke depan perlu kita dorong juga Pak Menteri, Undang-Undang Perlindungan Guru. Jadi guru itu bisa nyaman dan mempunyai ruang untuk mendidik dengan cara-cara yang tetap disiplin, tapi harus ada undang-undang dan perlindungannya," kata dia.</p>
+      </div>
+    </div>
+    <!-- Berita ketiga -->
+    <div class="info-item">
+      <img src="images/buming.jpg" alt="Judul Berita Ketiga" class="info-image">
+      <div class="text-content">
+        <h3>Korban kekerasan seksual jangan dikeluarkan</h3>
+        <p>Gibran juga memberikan perhatian pada kasus korban kekerasan seksual. Menurut Gibran, korban tidak semestinya dikeluarkan dari sekolah. "Jangan sampai mereka malah dikeluarkan dari sekolah. Kalau bisa kita beri atensi khusus, kalau bisa dibangunkan sekolah khusus untuk mereka. Ini idenya Pak Menteri, ya, bukan ide saya," kata dia.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Navigation -->
+  <div class="bottom-nav">
+    <div class="nav-item">🏠</div>
+    <div class="nav-item">📄</div>
+    <div class="nav-item">🔔</div>
+    <div class="nav-item">#️⃣</div>
+    <div class="nav-item">👤</div>
+  </div>
+
+  <!-- Script untuk Menampilkan Formulir Pelaporan di Halaman Baru -->
+  <script>
+    // Ambil tombol "Pelaporan"
+    const openFormButton = document.getElementById("openFormButton");
+
+    // Tambahkan event listener untuk membuka halaman baru formulir pelaporan
+    openFormButton.addEventListener("click", function() {
+      window.location.href = "formulir_pelaporan.html"; // Ganti halaman ke formulir pelaporan
+    });
+
+    // Ambil tombol "Status"
+    const statusButton = document.getElementById("statusButton");
+
+    // Tambahkan event listener untuk membuka halaman status
+    statusButton.addEventListener("click", function() {
+      window.location.href = "status.html"; // Pindah ke halaman status
+    });
+
+    // Ambil tombol "Informasi"
+    const informasiButton = document.getElementById("informasiButton");
+
+    // Tambahkan event listener untuk membuka halaman submenu 'Informasi'
+    informasiButton.addEventListener("click", function() {
+      window.location.href = "informasi.html"; // Ganti halaman ke submenu Informasi
+    });
+  </script>
+
+</body>
+</html>
